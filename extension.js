@@ -30,6 +30,7 @@ class ClassicAppSwitcher extends PanelMenu.Button {
         this._workspaceId = null;
         this._trackerId = null;
         this._settingsChangedId = null;
+        this._timeoutId = null;
 
         this._buildUI();
         this._buildMenu();
