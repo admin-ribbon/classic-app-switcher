@@ -433,13 +433,13 @@ class ClassicAppSwitcher extends PanelMenu.Button {
             }
             
             // Handle "Hide Others" visibility/sensitivity
-            // Only show if there are other VISIBLE windows (not minimized) besides current
-            const currentWindow = global.display.focus_window;
-            const visibleOtherWindows = windows.filter(win => 
-                win !== currentWindow && !win.minimized
-            );
+            // Only show if there are OTHER APPS (not just other windows) with visible windows
+            const otherAppsWithVisibleWindows = windows.some(win => {
+                const winApp = Shell.WindowTracker.get_default().get_window_app(win);
+                return winApp !== focusedApp && !win.minimized;
+            });
             
-            if (visibleOtherWindows.length === 0) {
+            if (!otherAppsWithVisibleWindows) {
                 this._hideOthersItem.visible = false;
             } else {
                 this._hideOthersItem.visible = true;
