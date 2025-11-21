@@ -583,12 +583,15 @@ class ClassicAppSwitcher extends PanelMenu.Button {
      */
     _hideOthers() {
         try {
-            const currentWindow = global.display.focus_window;
+            const focusedApp = Shell.WindowTracker.get_default().focus_app;
+            if (!focusedApp) return;
+
             const workspace = global.workspace_manager.get_active_workspace();
             const allWindows = global.display.get_tab_list(Meta.TabList.NORMAL, workspace);
 
             allWindows.forEach(win => {
-                if (win !== currentWindow && !win.minimized) {
+                const winApp = Shell.WindowTracker.get_default().get_window_app(win);
+                if (winApp !== focusedApp && !win.minimized) {
                     win.minimize();
                 }
             });
