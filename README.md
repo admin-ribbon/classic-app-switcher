@@ -6,7 +6,7 @@ The extension places an app indicator (icon and title) on the panel showing the 
 
 #### **Key Features:**
 
-- Panel button opens a menu with window management functions
+- Panel button shows the currently focused application & opens a menu with window management functions
 - Lists running applications on the current workspace
 - Easily hide an app and retrieve all of its open windows
 - Hide all other apps/windows allowing you to focus on the active window
