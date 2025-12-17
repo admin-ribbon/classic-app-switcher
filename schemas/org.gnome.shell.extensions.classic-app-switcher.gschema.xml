@@ -1,31 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="classic-app-switcher">
-  <schema id="org.gnome.shell.extensions.classic-app-switcher" 
-          path="/org/gnome/shell/extensions/classic-app-switcher/">
-    
+  <schema id="org.gnome.shell.extensions.classic-app-switcher" path="/org/gnome/shell/extensions/classic-app-switcher/">
     <key name="show-label" type="b">
       <default>true</default>
-      <summary>Show application name label</summary>
+      <summary>Show application name</summary>
       <description>Display the name of the currently focused application next to its icon in the panel</description>
     </key>
-    
     <key name="panel-box" type="s">
       <default>'right'</default>
       <choices>
-        <choice value='left'/>
-        <choice value='center'/>
-        <choice value='right'/>
+        <choice value="left" />
+        <choice value="center" />
+        <choice value="right" />
       </choices>
       <summary>Panel box position</summary>
       <description>The panel area where the switcher should be placed (left, center, or right)</description>
     </key>
-    
     <key name="position-in-box" type="i">
       <default>0</default>
-      <range min="-10" max="10"/>
+      <range min="-10" max="10" />
       <summary>Position offset in panel box</summary>
-      <description>Fine-tune the position within the chosen panel box (0 is default, negative moves left/up, positive moves right/down)</description>
+      <description>Fine-tunes the position within the chosen panel box (0 is default, negative moves left/up, positive moves right/down)</description>
     </key>
-    
+    <key name="enable-keyboard-shortcuts" type="b">
+      <default>false</default>
+      <summary>Enable keyboard shortcuts</summary>
+      <description>Activates custom shortcuts for enhanced window management</description>
+    </key>
+    <key name="show-menu-hints" type="b">
+      <default>true</default>
+      <summary>Show keyboard hints in menu</summary>
+      <description>Displays keyboard shortcut hints next to menu items when shortcuts are enabled</description>
+    </key>
+    <key name="hide-current-app" type="as">
+      <default><![CDATA[['<Super>h']]]></default>
+      <summary>Hide the current application</summary>
+      <description>Hides all windows of the currently focused application</description>
+    </key>
+    <key name="hide-others" type="as">
+      <default><![CDATA[['<Alt><Super>h']]]></default>
+      <summary>Hide all other applications</summary>
+      <description>Hides all windows except those belonging to the currently focused application</description>
+    </key>
+    <key name="show-recent-app" type="as">
+      <default><![CDATA[['<Super>u']]]></default>
+      <summary>Show most recently hidden application</summary>
+      <description>Restores the most recently hidden application to view</description>
+    </key>
+    <key name="show-all-apps" type="as">
+      <default><![CDATA[['<Alt><Super>u']]]></default>
+      <summary>Show all hidden applications/windows</summary>
+      <description>Restores all hidden apps and minimized windows on the current workspace</description>
+    </key>
+    <key name="minimize-current-window" type="as">
+      <default><![CDATA[['<Super>m']]]></default>
+      <summary>Minimize the current window</summary>
+      <description>Minimizes the currently focused window</description>
+    </key>
+    <key name="unminimize-recent-window" type="as">
+      <default><![CDATA[['<Alt><Super>m']]]></default>
+      <summary>Unminimize most recently minimized window</summary>
+      <description>Restores the last minimized window</description>
+    </key>
+    <key name="close-current-window" type="as">
+      <default><![CDATA[['<Super>w']]]></default>
+      <summary>Close the current window</summary>
+      <description>Closes the currently focused window</description>
+    </key>
+    <key name="quit-current-app" type="as">
+      <default><![CDATA[['<Super>q']]]></default>
+      <summary>Quit the current application</summary>
+      <description>Quits the currently focused application</description>
+    </key>
   </schema>
 </schemalist>

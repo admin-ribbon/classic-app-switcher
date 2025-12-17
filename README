@@ -1,6 +1,6 @@
 # Introduction
 
-Classic App Switcher is a 🖱️ Mouse friendly application switcher for GNOME inspired by the classic Mac OS. The minimal design blends discreetly into the GNOME UI, providing a familiar workflow for users transitioning from macOS while respecting GNOME's design principles.
+Classic App Switcher is a 🖱️ Mouse friendly application switcher for GNOME Shell inspired by the classic Mac OS. The minimal design blends discreetly into the GNOME UI, providing a familiar workflow for users transitioning from macOS while respecting GNOME's design principles.
 
 The extension places an app indicator (icon and title) on the panel showing the currently focused application. This serves as a helpful anchor on both single and multi-workspace setups, especially useful since GNOME removed window titles from the top bar.
 
@@ -13,7 +13,7 @@ The extension places an app indicator (icon and title) on the panel showing the 
 - Window count showing visible and hidden (or minimized) windows and apps
 - Workspace-isolated behaviour for fluid multi-workspace workflows
 - Panel Button Scroll - Scroll DOWN to toggle between focused application and most recent below. Scroll UP to cycle through open application stack in reverse order (back-to-front - requires at least 3x open apps!)
-- Optional Mac OS style keyboard shortcut support! (details below)
+- Mac Style Keyboard Shortcut Support! (details below)
 - Complements native GNOME features (Activities, Dash, Dynamic Workspaces)
 
 ### **Design Philosophy:**
@@ -25,7 +25,7 @@ Classic App Switcher augments GNOME's existing workflow rather than replacing it
 - On vanilla GNOME with a clean default panel
 - Without competing taskbar/dock extensions
 - Embracing GNOME's unique interface paradigm
-- Remember: The Dash is **NOT** a Dock!
+- Remember: The Dash is NOT a Dock!
 
 #### **Built for:**
 
@@ -65,7 +65,3 @@ All shortcuts are restored to default when you disable the extension!
 1. In order to display a symbolic icon in the panel indicator, developers must ensure they have included a symbolic version of their app-icon in their package. Missing icons will result in the default full-color Icon being displayed. If you spot an application that has a missing icon please reach out to their developers politely requesting they add one!
 
 2. This extension will function perfectly well if you do not have the minimize button enabled for window management - though you may find it helpful to enable this via GNOME Tweaks for an enhanced experience, particularly if you tend to work with multiple windows and apps on a single workspace. Note: GNOME 47+ disables the minimize button by default, but it can easily be re-enabled.
-
-## Installation
-
-🌐 Classic App Switcher is available for download on the Official [GNOME Extensions](https://extensions.gnome.org/extension/8849/classic-app-switcher/) website.

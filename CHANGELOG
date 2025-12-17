@@ -3,7 +3,30 @@
 All notable changes to this project will be documented in this file.
 
 We go to the next version after each release on the
-[GNOME Shell Extensions website](https://extensions.gnome.org/).
+[GNOME Shell Extensions website] (https://extensions.gnome.org/).
+
+## [2.0] - 2025-12-07
+
+- Updated Release for GNOME Shell 47, 48 & 49
+
+### Added
+
+- Panel Button Idle-State UI/UX Improvements
+- **New Feature** Panel Button Scroll - Scroll wheel to cycle through open applications. DOWN = next app, UP = previous app (requires 2+ apps)
+- **New Feature** Introducing optional Mac OS style keyboard shortcut support! (See Readme for full details)
+- Bundled all UI Icons instead of relying on named-icon from active theme/system
+- Extended support to include GNOME Shell 47
+
+### Fixed
+
+- Missing popup-menu max-width CSS styling
+- Panel button padding increased to match system-status-icon when using icon-only mode
+- Hard-coded panel-button width moved to CSS Style-sheet
+- Missing gettext string translation on fallback Hide/Quit menu-items
+
+### Removed
+
+- GNOME Shell 50 support temporarily removed pending stable release due to upstream panel button event handling regression
 
 ## [1.0] - 2025-11-11
 
