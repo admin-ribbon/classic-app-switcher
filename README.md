@@ -42,7 +42,7 @@ This extension provides optional Mac-style keyboard shortcuts for accessibility:
    - **Super+W**: Close the current window
    - **Super+Q**: Quit the current application
 
-Keyboard Access to the list of running apps is handled by GNOME's built-in **Super+Tab** function which by default shows running apps from ALL workspaces, to limit this to the current workspace (to match the classic-app-switcher's behaviour) you need to use dconf Editor to set [/org/gnome/shell/app-switcher/current-workspace-only] to 'true' → Activities and the Dash now act as ‘Mission-Control’ - showing all running apps across all active workspaces, while each workspace operates in glorious isolation! 😎
+Keyboard Access to the list of running apps is handled by GNOME's built-in **Super+Tab** function which by default shows running apps from ALL workspaces, to limit this to the current workspace (to match the classic-app-switcher's behaviour) go to; GNOME Settings → Multitasking → App Switching and select 'Include apps from the current workspace only' - Activities and the Dash now act as ‘Mission-Control’ showing all running apps across all active workspaces, while each workspace operates in glorious isolation! 😎
 
 **A Short Note About Keyboard Shortcuts** 
 
