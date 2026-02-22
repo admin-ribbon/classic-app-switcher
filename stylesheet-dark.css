@@ -6,7 +6,7 @@
 
 .classic-app-switcher .classic-switcher-icon {
     icon-size: 1.091em;
-    -st-icon-style: symbolic;
+    -st-icon-style: regular;
 }
 
 .classic-app-switcher .classic-switcher-icon:first-child:last-child {
